@@ -1,0 +1,11 @@
+﻿@model Giris
+
+<form asp-action="Index" asp-controller="Giris" method="post">
+    <label asp-for="KullaniciAdi"></label>
+    <input type="text" asp-for="KullaniciAdi" />
+    <br />
+    <label asp-for="Sifre"></label>
+    <input type="text" asp-for="Sifre" />
+    <br />
+    <input type="submit" value="Giriş" />
+</form>

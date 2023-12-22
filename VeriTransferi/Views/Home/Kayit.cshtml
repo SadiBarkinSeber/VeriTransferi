@@ -1,0 +1,34 @@
+﻿<form action="/Home/Kayit">
+    <label>Ad :</label>
+    <input type="text" name="ad" />@*Ad*@
+    <br />
+
+    <label>Soyad :</label>
+    <input type="text" name="soyad" />@*Soyad*@
+    <br />
+
+    <label>Doğum Tarihi :</label>
+    <input type="date" name="dogumTarihi" />@*DogumTarihi*@
+    <br />
+
+    <label>Cinsiyet :</label>
+    Kadın @Html.RadioButton("cinsiyet","kadın",true,new{name = "Kadın"})
+    Erkek @Html.RadioButton("cinsiyet","erkek",true,new{name = "Erkek"})
+    <br />
+
+    <label>Öğrenim Durumu :</label>
+    <select type="ogrenim" name="ogrenim">
+        @*OgrenimDurumu*@
+        <option value="ilkokul">İlk Okul</option>
+        <option value="lise">Lise</option>
+        <option value="lisans">Lisans</option>
+        <option value="yukseklisans">Yüksek Lisans</option>
+    </select>
+    <br />
+
+    <label>Medeni Durum :</label>
+    Evli @Html.CheckBox("Evli")
+    <br />
+
+    <input type="submit" value="Giriş" />
+</form>
